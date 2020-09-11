@@ -5,13 +5,14 @@ function draw(){
 
     let D = 40;
 
+    D++;
+
     fill("#59383d");
     circle (400, 300, D);
-
-    D = D + 10;
 
     if(D > 300){
         fill("#59383d");
         circle (400, 300, D);
     }
+
 }
