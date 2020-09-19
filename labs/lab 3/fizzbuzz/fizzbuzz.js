@@ -11,12 +11,12 @@ function setup() {
 
 function draw(){
 
-    for (n = 0; n < 26; n++) {
+    for (n = 0; n < 25; n++) {
         fill (black);
         circle (x, 50, 25);
         x += 55
         console.log(n)
-
+        
     }
     console.log("Divider")
 }

@@ -8,9 +8,8 @@ function setup() {
 function draw(){
     background(grey);
 
-    noFill();
-
-    for (var n = 0; n < 41 ; n++) {
+    for (var n = 41; n > 0 ; n--) {
+        fill (white);
         circle (200, 200, n * 5);
     }
 
