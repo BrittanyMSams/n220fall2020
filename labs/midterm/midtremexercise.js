@@ -35,8 +35,8 @@ function setup() {
             rect(130 * c, 0 , 140, 80);
             console.log(icecream)
         }
-        
     }
+
 
 function draw(){
     fill("#e3aa6d");
@@ -54,6 +54,11 @@ function draw(){
 
     fill(myDrop3.color);
     circle(myDrop3.x, myDrop3.y, myDrop3.r);
+}
 
-    
+if(keypress(87)) {
+    draw();
+}
+else{
+    console.log("Press W To Restart")
 }
