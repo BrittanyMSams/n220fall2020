@@ -56,7 +56,9 @@ function draw(){
     circle(myDrop3.x, myDrop3.y, myDrop3.r);
 }
 
-if(keypress(87)) {
+if(myDrop.y > 299) {
+    background(0)
+    setup()
     draw();
 }
 else{
