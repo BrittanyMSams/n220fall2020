@@ -54,13 +54,23 @@ function draw(){
 
     fill(myDrop3.color);
     circle(myDrop3.x, myDrop3.y, myDrop3.r);
-}
 
-if(myDrop.y > 299) {
-    background(0)
-    setup()
-    draw();
-}
-else{
-    console.log("Press W To Restart")
+    //If nothing is pressed then in console it will say "PRESS W TO RESTART"
+    //If w is press background restarts to white, recalls array, and drops.y restarts back to 39
+
+    if(keyIsPressed === true) {
+        background(255)
+        myDrop.y = 39;
+        myDrop2.y = 39;
+        myDrop3.y = 39;
+
+        for(var c = 0; c < icecream.length; c ++) {
+            fill (icecream[c]);
+            rect(130 * c, 0 , 140, 80);
+            console.log(icecream)
+        }
+    }
+    else{
+        console.log("Press W To Restart")
+    }
 }
