@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #heroimage {
+            width: 100px;
+            height: 100px;
+            background-color: #00FF00;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            margin: 5px;
+        }
+        #villianimage {
+            width: 100px;
+            height: 100px;
+            background-color: #0000FF;
+            position: absolute;
+            top: 200px;
+            left: 105px;
+        }
+        .gridItem {
+            width: 40px;
+            height: 50px;
+            background-color: #990099;
+            margin: 2px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
+    <div id="heroimage"></div>
+    <dvi id="villianimage"></dvi>
 
-    
+    <div class="gridItem"></div>
+    <div class="gridItem"></div>
+    <div class="gridItem"></div>
+    <div class="gridItem"></div>
+    <div class="gridItem"></div>
+
+    <div id="coin" onclick="flipCoin()"></div>
+   
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="jpractice.js"></script>
